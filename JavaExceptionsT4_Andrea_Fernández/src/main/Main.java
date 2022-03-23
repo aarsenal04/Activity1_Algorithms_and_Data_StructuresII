@@ -22,7 +22,7 @@ public class Main {
                     + e.getMessage());
         }finally { //siempre se ejecuta
 
-            System.out.println("Contraseña validada");
+            System.out.println("Desea cambiar su contraseña?");
         }
     }
 }
