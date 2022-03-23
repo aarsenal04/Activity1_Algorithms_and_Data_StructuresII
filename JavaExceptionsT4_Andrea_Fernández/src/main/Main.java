@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args){
 
         String usuario, passw, repassw;
-        usuario = "JorgeAR7"; //variable campo de usuario
-        passw = "andres123"; // variable campo de contraseña
-        repassw = "andres124"; // variable repetición de contraseña diferente a la real
+        usuario = "Andrea2003"; //variable campo de usuario
+        passw = "projectidea"; // variable campo de contraseña
+        repassw = "activity"; // variable repetición de contraseña diferente a la real
         // repassw se puede cambiar para encontrar los diferentes errores
 
         Ayuda h = new Ayuda(); // clase para ayudar a registrar al usuario
