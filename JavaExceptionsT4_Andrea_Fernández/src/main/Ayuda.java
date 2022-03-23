@@ -5,7 +5,7 @@ public class Ayuda { //clase para validar la contraseña
     Ayuda() {
     }
 
-    public void validarpassw(String passw, String repassw) throws CustomException{ // valida en caso de errores
+    public void validarpassw(String passw, String repassw, String usuario) throws CustomException{ // valida en caso de errores
 
         if(!passw.equals(repassw)){
 
@@ -14,6 +14,11 @@ public class Ayuda { //clase para validar la contraseña
 
         if(passw.length() < 8){
             throw new CustomException(" no se ha verificado porque no es lo suficientemente larga"); // error en caso de que la contraseña sea corta en su validación
+
+        }
+
+        if(usuario.equals(passw)){
+            throw new CustomException("La clave no puede ser igual al usuario"); // error de seguridada
 
         }
 
