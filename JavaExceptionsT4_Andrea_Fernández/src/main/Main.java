@@ -1,3 +1,5 @@
+//Esta es la actividad #1
+// Andrea Fernández y Abraham Venegas
 package main;
 // excepciones personalizadas, error para manejar una contraseña repetida
 public class Main {
@@ -14,7 +16,7 @@ public class Main {
 
         try { // intenta validar el pass del usuario pasándole la contraseña real y la repetida diferente
 
-            h.validarpassw(passw, repassw);
+            h.validarpassw(passw, repassw, usuario);
 
         }catch (CustomException e) { // clase personalizada - exception
 
@@ -22,7 +24,7 @@ public class Main {
                     + e.getMessage());
         }finally { //siempre se ejecuta
 
-            System.out.println("Desea cambiar su contraseña?");
+            System.out.println("Contraseña validada");
         }
     }
 }
