@@ -9,11 +9,11 @@ public class Ayuda { //clase para validar la contraseña
 
         if(!passw.equals(repassw)){
 
-            throw new CustomException(" no se ha verificado porque los campos no son iguales"); // error en caso de que los campos no sean iguales en sus validaciones
+            throw new CustomException(" no es válida porque los campos no son iguales"); // error en caso de que los campos no sean iguales en sus validaciones
         }
 
         if(passw.length() < 8){
-            throw new CustomException(" no se ha verificado porque no es lo suficientemente larga"); // error en caso de que la contraseña sea corta en su validación
+            throw new CustomException(" no es válida porque no es lo suficientemente larga"); // error en caso de que la contraseña sea corta en su validación
 
         }
 
